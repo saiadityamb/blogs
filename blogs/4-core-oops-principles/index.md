@@ -43,6 +43,7 @@ When you say `Object1.total_price()`, you just say that I want the total price w
 
 <details>
 <summary><b>INHERITANCE</b> </summary>
+
 ## INHERITANCE
 
 *We inherit the genes from out parents*. Similarly, A particular `Class` can inherit all the public/protected properties of a parent class. This is called **Inheritance** in OOPs. Lets consider the following Example :- 
@@ -59,3 +60,18 @@ Here, we see that there is a parent class `Item` and a child class `Television` 
 For Further details of Inheritance, Refer thefollowing Link :- 
 [Single and Multiple Inheritance in Python](https://www.geeksforgeeks.org/types-of-inheritance-python/)
 </details>
+
+<details>
+<summary><b>POLYMORPHISM</b> </summary>
+</details>
+
+
+## POLYMORPHISM
+
+**POLYMORPHISM** is a two word combination. **Poly** means *many* and **Morph** means *Forms*. In OOP, polymorphism come into play when we use same function/methods/objects to process more than one type of data. Take a look at following example :- 
+
+![OOPs](./images/9.png)
+
+Here we see that the `len()` fucntion is used to calculate the function of both the datatypes `string` and `list`.Following is the result.
+
+![OOPs](./images/10.png)
