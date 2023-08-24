@@ -1,7 +1,7 @@
 # 4 Basic Object Oriented Programming (OOPs) Principles
 
 ### The 4 core OOPs Principles are as follow :- 
-<details>
+<details open>
 <summary><b>ENCAPSULATION</b> </summary>
 
 ## ENCAPSULATION
@@ -63,15 +63,16 @@ For Further details of Inheritance, Refer thefollowing Link :-
 
 <details>
 <summary><b>POLYMORPHISM</b> </summary>
-</details>
-
-
 ## POLYMORPHISM
 
 **POLYMORPHISM** is a two word combination. **Poly** means *many* and **Morph** means *Forms*. In OOP, polymorphism come into play when we use same function/methods/objects to process more than one type of data. Take a look at following example :- 
 
 ![OOPs](./images/9.png)
 
-Here we see that the `len()` fucntion is used to calculate the function of both the datatypes `string` and `list`.Following is the result.
+Here we see that the `len()` fucntion is used to calculate the function of both the datatypes `string` and `list`.Following is the result without any error. That means, `len` is optmized to work with both the form of data. 
 
 ![OOPs](./images/10.png)
+
+For Advanced concepts in ploymorphism, like `Function Overloading`, `Operator Overloading` and `Function Overriding` refer the following link :- [GeeksforGeeks](https://www.geeksforgeeks.org/perl-polymorphism-in-oops/)
+</details>
+
