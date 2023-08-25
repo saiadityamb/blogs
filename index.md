@@ -8,6 +8,7 @@
 ## ~~My Blogs~~ Tech Concepts
 
 - ### [**4 Core Object Oriented Programming Principles**](/blogs/4-core-oops-principles/)
+- ### [**Proxy and Reverse Proxy Servers**](/blogs/4-core-oops-principles/)
 
 <!-- [**Greyfeathers pvt ltd.**](https://www.kpn.com/) • Internship \
 Languages & Technologies: `Python`, `FastAPI`, `MongoDB`, `AWS`, `GCP` \ -->
