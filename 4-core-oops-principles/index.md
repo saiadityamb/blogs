@@ -1,5 +1,8 @@
 # 4 Basic Object Oriented Programming (OOPs) Principles
 
+[<img align="center" height="250" width="250" alt="KPN" src="./images/oops.avif"/>]()
+
+
 ### The 4 core OOPs Principles are as follow :- 
 <details open>
 <summary><b>ENCAPSULATION</b> </summary>
@@ -63,6 +66,7 @@ For Further details of Inheritance, Refer thefollowing Link :-
 
 <details>
 <summary><b>POLYMORPHISM</b> </summary>
+
 ## POLYMORPHISM
 
 **POLYMORPHISM** is a two word combination. **Poly** means *many* and **Morph** means *Forms*. In OOP, polymorphism come into play when we use same function/methods/objects to process more than one type of data. Take a look at following example :- 
