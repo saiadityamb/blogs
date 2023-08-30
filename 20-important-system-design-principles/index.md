@@ -4,7 +4,7 @@
 
 Imagine, we have a single server that we have to scale to a large number of Users, we have to two methods to scale our Backend Server :- 
 
-<details>
+<details open>
 <summary><b>1. Vertical Scaling</b> </summary>
 
 <img height="400" width="600" alt="KPN" src="./images/vertical-scaling.webp"/>
@@ -38,6 +38,24 @@ A **load balancer** is an Intermediate server that accepts all the user requests
 
 Sometimes, these multiple severs that we deploy are present in different geographical locations around the world, which brings us to the next topic: **Content Delivery Networks** or **CDN's.**
 
-<details open>
+<details>
 <summary><b>4. Content Delivery Networks(CDNs)</b> </summary>
+
+<img height="400" width="600" alt="KPN" src="./images/cdn.png"/>
+
+We have users all around the world, but generally, our backend(**ORIGIN**) server is located at a specific geographical location. So everytime, when a user makes a request, this request will be slow if the user is located very far away from the server and fast vice-versa. So to tackle this problem, a copy of our server is created and distributed at different data centers all around the globe. 
+
+This reduces the response time and creates a network all around the globe. This is called **Content-Delivery-Network.** or **CDN**. CDNs are generally used to cache the static data such as images, videos, text etc. so that a group of users located at same geographical location, do not face any down time!
+
+> Note: These days CDNs are also being used for dynamic content delivery as well!
+
+</details>
+
+<details open>
+<summary><b>5. Caching</b> </summary>
+
+<img height="400" width="600" alt="KPN" src="./images/cache.png"/>
+
+**Caching**, essentially means to create copies of out data, so that it can be fetched faster in future. Making network request is everytime is usually expensive, hence browsers create a cache of data loaded in the HardDisk. Reading **HDDs** can be expensive, hence out computer store a copy of that data in **RAM**. Reading RAM can even be expensive somtimes, so our **Operating System**, store this data in **L1**, **L2** and **L3** CPU Cache.
+
 </details>
