@@ -8,7 +8,7 @@
 ## ~~My Blogs~~ Tech Concepts
 
 - ### [**4 Core Object Oriented Programming Principles**](/blogs/4-core-oops-principles/)
-- ### [**20 Important System Design Principles**](/blogs/20-important-system-design-principles/)
+- ### [**20 Important System Design Concepts**](/blogs/20-important-system-design-concepts/)
 <!-- - ### [**Proxy and Reverse Proxy Servers**](/proxy-reverse-proxy-servers/) -->
 
 <!-- [**Greyfeathers pvt ltd.**](https://www.kpn.com/) • Internship \
