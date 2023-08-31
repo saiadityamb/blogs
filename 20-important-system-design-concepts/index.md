@@ -4,7 +4,7 @@
 
 Imagine, we have a single server that we have to scale to a large number of Users, we have to two methods to scale our Backend Server :- 
 
-<details>
+<details open>
 <summary><b>1. Vertical Scaling</b> </summary>
 <br>
 
@@ -123,17 +123,57 @@ There are **Multiple API Paradigms** that can be followed with **HTTP**. Followi
 
 </details>
 
-<details open>
+<details>
 <summary><b>11. GraphQL</b> </summary>
 <br>
 
-**GraphQL** or **Graph Query Language** is a type of API paradigm that was introduced by facebook in 2015 in which we pass a query to the server to get the multiple data fields that are required in a single request unlike HTTP, in which we have to make multiple request to get multiple data.[Visit Official GraphQL website for more details](https://graphql.org/)
+**GraphQL** or **Graph Query Language** is a type of API paradigm that was introduced by facebook in 2015 in which we pass a query to the server to get the multiple data fields that are required in a single request unlike HTTP, in which we have to make multiple request to get multiple data.[Visit Official GraphQL website for more details.](https://graphql.org/)
 
 </details>
 
-<details open>
+<details>
 <summary><b>12. gRPC</b> </summary>
+<br>
 
-**gRPC** or **general-purpose Remote Procedure Call** is an API framework that was introduced by google to help **microservices communicate faster**. In general gRPSs are **7 time faster** than REST APIs. This is because REST APIs uses **JSON** payloads where gRPSs use **Protocol Buffers** which are binary encoded data.
+**gRPC** or **general-purpose Remote Procedure Call** is an API framework that was introduced by google to help **microservices communicate faster**. In general gRPSs are **7 time faster** than REST APIs. This is because REST APIs uses **JSON** payloads where gRPSs use **Protocol Buffers** which are binary encoded data. [Visit Official gRPC website for more details.](https://grpc.io/)
+</details>
+
+<details>
+<summary><b>13. WebSockets</b> </summary>
+<br>
+
+**Websockets** is the way to establish a bi-directional communication betwwen client and server. With HTTP, at one time, either client can request or server can respond to a previous request but with websockets **asynchronously** both request and response can travel at same time in a connection.
+
+<img height="300" width="500" alt="KPN" src="./images/websocket.png"/>
+
+**Now what is the need of websocket?** Imagine a chat app as shown in the below figure!
+
+<img height="300" width="500" alt="KPN" src="./images/websocket2.png"/>
+
+Say, if client1 sends a message to client2, but how would client2 know that? If the connection is HTTP, client2 will have to poll the server in every 1 or 2 seconds to check whether it has a new message! This polling is what **websockets** cut out. As soon as client1 sends a message, server redirect that message to client2 in the websocket connection which in a way also make the system realtime!
+
+</details>
+
+Now, to store data, we need a database, the most popular being **SQL** Databases.
+
+> Note:- Database storage is more efficient that normal textfiles is because they store data efficintly using **B-Trees** and hence data push and retrieval also way more faster.
+
+
+<details>
+<summary><b>14. SQL</b> </summary>
+<br>
+
+**SQL** or **Structured Query Language** is a relational database that stores data in the form of rows and columns. **Ex:- MySQL, PostgresSQL etc.** SQL Database are ACID compliant which stands for **Atomicity**, **Consistency**, **Isolation**, **Durability**. [ACID Details - GeeksforGeeks](https://www.geeksforgeeks.org/acid-properties-in-dbms/)
+
+> Note: Consistency in SQL databases, makes them harder to scale since many **foreign key constraints** exits between tables in sql databases.
+</details>
+
+
+<details>
+<summary><b>15. NoSQL</b> </summary>
+<br>
+
+**NoSQL** databases removes the consistency constraint from the SQL databses, hence there is nor schema that we have to define while storing data in NoSQL database unlike SQL which requires exact schema in which data has to be stored. Popular **NoSQL** databases are **MongoDB** **(document-collection)**, **neo4j(graph based)** etc.
+
 </details>
 
