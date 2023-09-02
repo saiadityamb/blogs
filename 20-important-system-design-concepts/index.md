@@ -163,17 +163,75 @@ Now, to store data, we need a database, the most popular being **SQL** Databases
 <summary><b>14. SQL</b> </summary>
 <br>
 
-**SQL** or **Structured Query Language** is a relational database that stores data in the form of rows and columns. **Ex:- MySQL, PostgresSQL etc.** SQL Database are ACID compliant which stands for **Atomicity**, **Consistency**, **Isolation**, **Durability**. [ACID Details - GeeksforGeeks](https://www.geeksforgeeks.org/acid-properties-in-dbms/)
+**SQL** or **Structured Query Language** is a relational database that stores data in the form of rows and columns. **Ex:- MySQL, PostgresSQL etc.** SQL Database are ACID compliant which stands for **Atomicity**, **Consistency**, **Isolation**, **Durability**.
 
 > Note: Consistency in SQL databases, makes them harder to scale since many **foreign key constraints** exits between tables in sql databases.
+
 </details>
+
+<details>
+<summary><b>15. ACID</b> </summary>
+<br>
+
+> [ACID Details - GeeksforGeeks](https://www.geeksforgeeks.org/acid-properties-in-dbms/)
+</details>
+
 
 
 <details>
-<summary><b>15. NoSQL</b> </summary>
+<summary><b>16. NoSQL</b> </summary>
 <br>
 
-**NoSQL** databases removes the consistency constraint from the SQL databses, hence there is nor schema that we have to define while storing data in NoSQL database unlike SQL which requires exact schema in which data has to be stored. Popular **NoSQL** databases are **MongoDB** **(document-collection)**, **neo4j(graph based)** etc.
+**NoSQL** databases remove the consistency constraint from the SQL databses, hence there is no specific schema that we have to define while storing data in NoSQL database unlike SQL which requires exact schema in which data has to be stored. Popular **NoSQL** databases are **DynamoDB** **(key-valyue stores)**, **MongoDB** **(document-collection)**, **neo4j(graph based)** etc.
 
 </details>
 
+<details>
+<summary><b>17. Sharding</b> </summary>
+<br>
+
+Since, **NoSQL** databases remove the consistency and foreign key constraints, the data can be broken down into multiple smaller databases and scaled horizontally for faster data **write/retrieval**. There are multiple ways in which a database can be sharded into smaller databases. One of the common techniques is to select a specific field from the data and make it a **`shard key`**, and use any **hash function** on this key to divide the database, as shown in the figure below!
+
+
+<img height="300" width="500" alt="KPN" src="./images/sharding.webp">
+
+</details>
+
+> Note: Database Sharding can at time become very complicated and hence a simpler option is to replicate the database to scale it globally
+
+<details>
+<summary><b>18. Replication</b> </summary>
+<br>
+
+In **database replication**, multiple replica of the databse is created and distributed around the world for better scaling. There are two models that are followed in database replication :- 
+
+ - **Leader-Follower** :- Here, Only *Leader* database, has both **read/write** permission whereas *follower* has only **read** permission.
+ - **Leader-Leader** :- All the entities of databases that are distributed has read/write permissions but it is very difficult to maintain consitency in this model.
+
+<img height="300" width="500" alt="KPN" src="./images/replication.png">
+
+</details>
+
+> Note: It is very difficult to keep all the replica of the databases in sync, so this is where **CAP theorem** comes into play!
+
+<details>
+<summary><b>19. CAP Theorem</b> </summary>
+<br>
+
+> [CAP Theorem - GeeksforGeeks](https://www.geeksforgeeks.org/the-cap-theorem-in-dbms/)
+
+**CAP** Theorem was incomplete and a more extended **PACELC** Theorem was created!
+
+> [PACELC Theorem - GeeksforGeeks](https://www.geeksforgeeks.org/pacelc-theorem/)
+
+</details>
+
+<details>
+<summary><b>20. Messages Queues</b> </summary>
+<br>
+
+If our **Server/Consumer** receives more requests than it can process, the incoming requests are queued into a **LinkedList** and then processed by the server one by one. This is called `Message Queue`.
+
+<img height="150" width="550" alt="KPN" src="./images/queue.png">
+
+</details>
